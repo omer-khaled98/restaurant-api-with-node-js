@@ -24,6 +24,7 @@ const allowedOrigins = [
   "http://localhost:4200",
   "http://localhost:5173",
   "https://restaurant-website-with-react-eight.vercel.app",
+  "https://ornate-creponne-a68150.netlify.app/",
 ];
 
 // Middleware
