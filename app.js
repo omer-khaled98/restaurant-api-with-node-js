@@ -23,14 +23,15 @@ const allowedOrigins = [
   "http://localhost:5174",
   "http://localhost:4200",
   "http://localhost:5173",
-"https://restaurant-website-with-react-eight.vercel.app",
+  "https://restaurant-website-with-react-eight.vercel.app",
+  "https://ornate-creponne-a68150.netlify.app/",
 ];
 
 // Middleware
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1 || origin === "*") {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
